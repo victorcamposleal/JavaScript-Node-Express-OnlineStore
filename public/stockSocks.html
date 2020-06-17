@@ -12,25 +12,35 @@
 <body>
 <header>
 
-<a href="verTodos.html">Colections</a>
+
+    <div class="logo">
+        <p>La Pata socks</p>
+        <img src="laPata.svg" alt="">
+    </div>  
+
+<div class="titulo">
+    <p>Stock</p>
+</div>
+
+<div>
+<a href="verTodos.html">Collections</a>
+</div>
+
 </header>
+<main>
 
-    <main>
+<input type="text" id="modelo" placeholder="model">
+<input type="text" id="tipo" placeholder=" type">
+<input type="text" id="talla" placeholder="size">
+<input type="text" id="qty" placeholder="qty">
+<input type="text" id="material" placeholder="material">
+<input type="text" id="price" placeholder="price">
+<input type="text" id="image" placeholder="image">
 
-        <input type="text" id="modelo" placeholder="model">
-        <input type="text" id="tipo" placeholder=" type">
-        <input type="text" id="talla" placeholder="size">
-        <input type="text" id="qty" placeholder="qty">
-        <input type="text" id="material" placeholder="material">
-        <input type="text" id="price" placeholder="price">
-        <input type="text" id="image" placeholder="image">
-        
         
         
         <a href="#" onclick="addSock()">add Socks</a>
         <div id="sockStock">
-            <img src="" alt="">
-            <button onclick="borrar"></button>
             
             
             
@@ -103,7 +113,7 @@
                 let erase;
                 for (let i = 0; i < stock.length; i++) {
                     erase = stock[i]._id
-                    cadenaStock += `<div class=stock><div><h1>${stock[i].model}</h1>
+                    cadenaStock += `<div class=stock><div><h2>${stock[i].model}</h2>
         <p>Category: ${stock[i].type}</p>
         <p>Size: ${stock[i].size}</p>
         <p>Qty: ${stock[i].qty}</p>
@@ -156,7 +166,7 @@
 
                     for (let i = 0; i < respuesta.length; i++) {
                         borrar = respuesta[i]._id
-                        sockstring += `<div class=stock><div><h1>${respuesta[i].model}</h1>
+                        sockstring += `<div class=stock><div><h2>${respuesta[i].model}</h2>
         <p>Category:${respuesta[i].type}</p>
         <p>Size:${respuesta[i].size}</p>
         <p>Qty:${respuesta[i].qty}</p>
@@ -197,7 +207,7 @@
                     let erase;
                     for (let i = 0; i < stock.length; i++) {
                         erase = stock[i]._id
-                        cadenaStock += `<div class=stock><div><h1>${stock[i].model}</h1>
+                        cadenaStock += `<div class=stock><div><h2>${stock[i].model}</h2>
         <p>Category:${stock[i].type}</p>
         <p>Size:${stock[i].size}</p>
         <p>Qty:${stock[i].qty}</p>
@@ -225,7 +235,7 @@
                     let erase;
                     for (let i = 0; i < stock.length; i++) {
                         erase = stock[i]._id
-                        cadenaStock += `<div class=stock><div><h1>${stock[i].model}</h1>
+                        cadenaStock += `<div class=stock><div><h2>${stock[i].model}</h2>
         <p>Category:${stock[i].type}</p>
         <p>Size:${stock[i].size}</p>
         <input type="text" id="qtys${erase}" placeholder="new qty${[i]}">
@@ -267,7 +277,7 @@
                     let erase;
                     for (let i = 0; i < stock.length; i++) {
                         erase = stock[i]._id
-                        cadenaStock += `<div class=stock><div><h1>${stock[i].model}</h1>
+                        cadenaStock += `<div class=stock><div><h2>${stock[i].model}</h2>
         <p>Category:${stock[i].type}</p>
         <p>Size:${stock[i].size}</p>
         <p>Qty:${stock[i].qty}</p>

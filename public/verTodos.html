@@ -18,6 +18,13 @@
         <p>La Pata socks</p>
         <img src="laPata.svg" alt="">
     </div>  
+
+    <div class="titulo">
+<p> collections</p>
+
+    </div>
+
+
     <ul class="menu">
         <li> <a href="#" onclick="categorySport()">Sports</a></li>
 <li> <a href ="#"onclick="categoryDaily()">Daily</a></li>
@@ -96,7 +103,7 @@
                 let cadenaStock = ""
                 for (let i = 0; i < stock.length; i++) {
                     erase = stock[i]._id
-                    cadenaStock += `<div class=stock><div><h1>${stock[i].model}</h1>
+                    cadenaStock += `<div class=stock><div><h2>${stock[i].model}</h2>
         <p>Category: ${stock[i].type}</p>
         <p>Size: ${stock[i].size}</p>
         <p>Material: ${stock[i].material}</p>
@@ -118,7 +125,7 @@ fetch(`/apipocket/${sport}`)
 
     let cadenaStock = ""
                 for (let i = 0; i < sport.length; i++) {
-                    cadenaStock += `<div class=stock><div><h1>${sport[i].model}</h1>
+                    cadenaStock += `<div class=stock><div><h2>${sport[i].model}</h2>
         <p>Category: ${sport[i].type}</p>
         <p>Size: ${sport[i].size}</p>
         <p>Material: ${sport[i].material}</p>
@@ -145,7 +152,7 @@ function categoryDaily(){
     console.log(daily)
     let cadenaStock = ""
                 for (let i = 0; i < daily.length; i++) {
-                    cadenaStock += `<div class=stock><div><h1>${daily[i].model}</h1>
+                    cadenaStock += `<div class=stock><div><h2>${daily[i].model}</h2>
         <p>Category: ${daily[i].type}</p>
         <p>Size: ${daily[i].size}</p>
         <p>Material: ${daily[i].material}</p>
@@ -168,7 +175,7 @@ function categoryDress(){
     console.log(dress)
     let cadenaStock = ""
                 for (let i = 0; i < dress.length; i++) {
-                    cadenaStock += `<div class=stock><div><h1>${dress[i].model}</h1>
+                    cadenaStock += `<div class=stock><div><h2>${dress[i].model}</h2>
         <p>Category: ${dress[i].type}</p>
         <p>Size: ${dress[i].size}</p>
         <p>Material: ${dress[i].material}</p>

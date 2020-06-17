@@ -16,12 +16,16 @@ a{
     background-color: springgreen;
     border-radius: 10px;
     color:white;
+    text-decoration: none;
 }
 body{
     font-family: 'Lexend Tera', sans-serif;
 }
 
+.titulo{
 
+    font-size: 30px;
+}
 /* footer//////////////////////////////////////////////////////////*/
 /* Pagina de busqueda ///////////////////////////////77*/
 
@@ -29,6 +33,7 @@ header{
 display: flex;
 flex-direction: row;
 justify-content: space-between;
+align-items: center;
 
 
 }
@@ -40,9 +45,15 @@ justify-content: space-between;
     justify-content: space-around;
     align-items: center;
     list-style: none;    
+    
 }
 .menu a{
     text-decoration: none;
+}
+.menu li{
+
+margin-right: 10px;
+
 }
 
 .logo img{
@@ -144,4 +155,248 @@ align-items: center;
         flex-direction: column;
         align-items: center;
     } 
+
+
+
     
+    @media (max-width: 700px) {
+
+
+
+        header{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+                    }
+
+
+        .footer  {
+            border-top: solid blue 1px;           
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: springgreen;
+            color: white;
+            margin-bottom: 0px;
+            width: 100%;
+            padding-bottom: 200px;
+            align-items: center;
+            }   
+            
+            .footerDer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            
+            }
+            /* .footerDer ul{
+            
+                padding :0px;
+                margin-left: 50px;
+                margin-right: 50px;S
+            
+            } */
+            
+            .footerDer li{
+            
+                list-style: none;
+                padding: 10px;
+            } 
+            
+            .foto img
+            {
+                width: 30px;
+                height: 30px;
+            }
+            .foto{
+                margin-left: 15px;
+            
+            }
+            .footerizq{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            
+            }
+            .listos h5{
+            margin-bottom: 0px;
+            
+            }
+            .listos ul{
+                margin-top: 0px;
+                
+                }
+             .listos
+            {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            } 
+            
+    
+            .menu{
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                justify-content: space-between;
+                }
+    
+                .menu a{
+                    color:black;
+                    text-decoration: none;
+                    padding: 10px;
+                    transition:width,background-color,transform ;
+                    
+                        
+                        }
+                
+                .menu a:hover{
+                    color:white;
+                    border-radius: 30px;
+                    background-color: springgreen;
+                    text-decoration: none;
+                    padding: 10px;
+                    transform: translateX(25px);
+                    transform: rotateZ(720deg);
+                     width: 15%;
+                        
+                        }
+    
+                        #photo img{
+                            width: 400px;
+                            height: 180px;
+                        }
+    
+    }
+    .separaBuscadors{margin-top: 30px;
+    }
+    @media (max-width: 401px) {
+    
+    
+        header{
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+        }
+    
+    
+        
+        .footer  {
+            border-top: solid blue 1px;           
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: springgreen;
+            color: white;
+            margin-bottom: 0px;
+            width: 100%;
+            padding-bottom: 200px;
+            align-items: center;
+            }   
+            
+            .footerDer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: left;
+            font-size: 10px
+            }
+            /* .footerDer ul{
+            
+                padding :0px;
+                margin-left: 50px;
+                margin-right: 50px;S
+            
+            } */
+            
+            .footerDer li{
+              list-style: none;
+                padding: 10px;
+            } 
+            
+            .foto img
+            {
+                width: 30px;
+                height: 30px;
+            }
+            .foto{
+                margin-left: 15px;
+            
+            }
+            .footerizq{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            
+            }
+    
+    
+            .listos h5{
+                margin-bottom: 0px;
+                
+            }
+            .listos ul{
+                margin-top: 0px;
+                
+            }
+            .listos
+            {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 0px;
+        }
+        
+      
+        .menu{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            justify-content: space-between;
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        
+            .menu a{
+                color:black;
+                text-decoration: none;
+                padding: 10px;
+                transition:all;
+                
+            }
+            
+            .menu a:hover{
+                background-color: springgreen;
+            border-radius: 10px;
+            
+        }
+      
+      
+      
+        
+                    .menuHead{
+                        margin-top: 0;
+                        
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 10px;
+                    } 
+                    .logo img{
+                        width: 50px;
+                        height: 50px;
+                    } 
+                    
+                    
+                    
+      
+                    
