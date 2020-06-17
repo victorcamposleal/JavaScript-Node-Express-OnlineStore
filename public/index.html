@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pocketSock.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <a onclick="viewSocks()"></a>
+    <input type="text" id="type" placeholder="Tipo de Actividad">
+    <a href="stockSocks.html">stock Socks</a>
+    
+
+
+
+    <script>
+ function viewSocks(){
+    
+let tipo=document.getElementById('type').value
+fetch(`/APIpocket/${tipo}`)
+ .then( function (datos) {
+    return datos.json();
+})
+.then(function (respuesta) {
+
+    console.log(respuesta)
+
+    for (let i = 0; i < respuesta.length; i++) {
+    console.log(respuesta[i].model)
+        
+    }
+    
+})  
+    
+}
+    </script>
+
+
+
+
+
+</body>
+</html>

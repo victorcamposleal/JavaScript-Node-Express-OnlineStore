@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<header>
+<ul class="menu">
+<li> <a onclick="Category()">Sports</a></li>
+<li> <a onclick="Category()">Dayli</a></li>
+<li> <a onclick="Category()"></a>Dress</li>
+</ul>
+
+</header>
+    <main>
+
+        <div id="stockSock">
+        </div>
+        
+    </main>
+    <script>
+        fetch('/apipocket/socks')
+            .then(function sockx(sockx) {
+                return sockx.json()
+
+            })
+
+            .then(function stock(stock) {
+                let cadenaStock = ""
+                let erase;
+                for (let i = 0; i < stock.length; i++) {
+                    erase = stock[i]._id
+                    cadenaStock += `<div class=stock><div><h1>${stock[i].model}</h1>
+        <p>Category: ${stock[i].type}</p>
+        <p>Size: ${stock[i].size}</p>
+        <p>Qty: ${stock[i].qty}</p>
+        <p>Material: ${stock[i].material}</p>
+        <p>Price:${stock[i].price}$</p>
+        <a href="" onclick="eraseSock('${erase}')">Erase</a>
+        <a href="" onclick="modificar()">Modifica cantidad</a></div>
+            <img src="${stock[i].image}" alt=""></div>`
+                }
+                document.getElementById("sockStock").innerHTML = cadenaStock;
+            })
+
+
+
+
+    </script>
+</body>
+</html>
